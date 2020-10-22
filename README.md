@@ -1,6 +1,6 @@
 # Never Ending Game
 
-"Never Ending Game" is a basic 2d platformer with one twist, it never ends.
+"Never Ending Game" is an unfinished, unpolished Godot based 2d game with one twist, it never ends.
 
 **NOTE : This game is meant to be a basic and easy way to understand and get started with Godot Game Engine for beginners like me. This game is not complete in any way and not refined for best user experience but PRs are welcome.**
 
