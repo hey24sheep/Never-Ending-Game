@@ -1,0 +1,30 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/ScoreLabel.gd" type="Script" id=1]
+
+[node name="GUI" type="CanvasLayer"]
+
+[node name="ScoreLabel" type="Label" parent="."]
+anchor_left = 0.0357143
+anchor_top = 0.025
+anchor_right = 0.0517857
+anchor_bottom = 0.025
+margin_right = 40.0
+margin_bottom = 14.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "SCORE: "
+align = 2
+uppercase = true
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Value" type="Label" parent="ScoreLabel"]
+margin_left = 50.0
+margin_right = 90.0
+margin_bottom = 14.0
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}

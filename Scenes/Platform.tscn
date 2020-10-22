@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://TerrainTileSetOneWayCollision.tres" type="TileSet" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 32, 10.2 )
+
+[node name="Platform" type="Node2D"]
+position = Vector2( 296, 520 )
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 32, 32 )
+cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+centered_textures = true
+format = 1
+tile_data = PoolIntArray( 65533, 0, 0, 65534, 1, 0, 65535, 1, 0, 0, 1, 0, 1, 1, 0, 2, 536870912, 0 )
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2( -0.499959, 12 )
+scale = Vector2( 2.76562, 0.625 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 0, -10.2 )
+shape = SubResource( 1 )
+one_way_collision = true
